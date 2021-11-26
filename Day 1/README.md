@@ -6,7 +6,7 @@ Create a function which returns a random number in the given range of values bot
 
 ```javascript
 
-function randomNumberGeneratorInRange(min, max) {
+function randomNumberGeneratorInRange(rangeStart, rangeEnd) {
 	// write your solution here
 
 	return
