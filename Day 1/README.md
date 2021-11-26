@@ -16,7 +16,7 @@ console.log(`My random number: ${randomNumberGeneratorInRange(5, 100)}`)
 
 ```
 
-## Challenges (0/2 DONE)
+## CHALLENGES (0/2 DONE)
 
 - [ ] randomNumberGeneratorInRange(10, 50) should return a number between 10-50 (inclusive)
 - [ ] randomNumberGeneratorInRange(100, 200) should return a number between 100-200 (inclusive)
