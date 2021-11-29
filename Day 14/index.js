@@ -8,37 +8,40 @@
  const convertDigitsToAskedBase = (digits, baseA, baseB) => {
 	// Your code here
     
-    var num = parseInt(digits.join(''), baseA);
+    var num = parseInt(digits.join(''));
 
-    var ans = num.toString(baseB);
+    var ans = 0;
 
-    var len = ans.length;
-
-    var arr = new Array(len);
-    for(var i = 0; i < len; i++)
+    if(baseA != 10)
     {
-        var ch = ans.charAt(i);
-        if(ch == 'a')
-        arr[i] = 10;
-
-        else if(ch == 'b')
-        arr[i] = 11;
-
-        else if(ch == 'c')
-        arr[i] = 12;
-        
-        else if(ch == 'd')
-        arr[i] = 13;
-
-        else if(ch == 'e')
-        arr[i] = 14;
-
-        else if(ch == 'f')
-        arr[i] = 15;
-
-        else arr[i] = parseInt(ch);
+        var temp = num, i = 0;
+        while(temp > 0)
+        {
+            var r = temp % 10;
+            ans += (r * Math.pow(baseA, i));
+            i++;
+            temp = Math.floor(temp / 10);
+        }
     }
-	return arr;
+
+    else 
+    ans = num;
+    
+    var ansArr = new Array();
+    if(baseB != 10)
+    {
+        var temp = ans, i = 1;
+        while(temp > 0)
+        {
+            var r = temp % baseB;
+            ansArr.unshift(r);
+            temp = Math.floor(temp / baseB);
+        }
+    }
+    else
+    ansArr = ans.toString().split('').map(Number);
+    
+	return ansArr;
 }
 
-console.log(convertDigitsToAskedBase([5,10], 8, 10));
+console.log(convertDigitsToAskedBase([5,10], 8, 2));
