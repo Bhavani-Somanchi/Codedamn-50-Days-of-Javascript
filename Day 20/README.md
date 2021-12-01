@@ -15,7 +15,7 @@ const addTwoNumbers = (a, b) => {
 
 ```
 
-## CHALLENGES (0/4 DONE)
+## CHALLENGES (0/2 DONE)
 
 - [ ] add Two Numbers
 - [ ] JUST ADD TWO NUMBERS! YAAAY
