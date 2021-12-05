@@ -20,7 +20,7 @@ function expandedForm(num) {
 
 ```
 
-## CHALLENGES (0/4 DONE)
+## CHALLENGES (0/3 DONE)
 
 - [ ] expandedForm(12) should return '10+2'
 - [ ] expandedForm(42) should return '40+2'
