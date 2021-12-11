@@ -5,7 +5,7 @@ function wave(str) {
     if(len == 0)
     return arr;
   
-    var i = 0, count = 0;
+    var count = 0;
   
     while(count < len)
     {
@@ -18,5 +18,5 @@ function wave(str) {
     return arr;
   }
   
-  console.log(wave(" gap "));
+  console.log(wave("hello"));
   
