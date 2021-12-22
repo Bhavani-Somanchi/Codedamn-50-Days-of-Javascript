@@ -10,9 +10,9 @@ const needsLicense = (kind) => {
 const chooseVehicle = (option1, option2) => {
 	// code here
     if(option1.localeCompare(option2) > 0)
-    return option2;
+    return option2  + " is clearly the better choice.";
 
-	return option1;
+	return option1  + " is clearly the better choice.";
 }
 
 const calculateResellPrice = (originalPrice, age) => {
